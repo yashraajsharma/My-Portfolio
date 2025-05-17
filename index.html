@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yash's Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f2027;  
+    background: linear-gradient(to right, #203a43, #2c5364);
+    color: #fff;
+  }
+  header {
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+    background-color: rgba(0,0,0,0.5);
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0.2rem 0;
+    letter-spacing: 2px;
+    color: #00d8ff;
+  }
+  header p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-top: 0;
+    color: #a0d8ef;
+  }
+  .container {
+    max-width: 900px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 216, 255, 0.2);
+  }
+  section h2 {
+    color: #00d8ff;
+    margin-top: 0;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #00d8ff;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .skills-list span {
+    background-color: #00d8ff;
+    color: #00343c;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  .skills-list span:hover {
+    background-color: #009ecf;
+    cursor: default;
+  }
+
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+  }
+  .links a {
+    color: #00d8ff;
+    transition: color 0.3s ease;
+  }
+  .links a:hover {
+    color: #48bbff;
+  }
+  .projects-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .projects-list li {
+    margin-bottom: 1rem;
+  }
+  .projects-list li a {
+    color: #00d8ff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .projects-list li a:hover {
+    text-decoration: underline;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  input, textarea {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  input:focus, textarea:focus {
+    outline: 2px solid #00d8ff;
+  }
+  button {
+    background-color: #00d8ff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #00343c;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #009ecf;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 1rem 2rem;
+    color: #00d8ff;
+    font-weight: 300;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Yash Raj Sharma</h1>
+  <p>BTech Student Batch 2027</p>
+  <p>Information Technology</p>
+</header>
+
+<div class="container">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Yash Raj Sharma, currently a student at JECRC Foundation(Jaipur, Rajsthan), pursuing BTech in Information Technology.
+Over time, I've developed interest in Artificial Intelligence, Data Analytics, Machine Learning, Data Structures & Algorithms And Data Science.
+
+I'm always exploring new ways to learn, collaborate, and create meaningful digital experiences. Let's build something great together!  </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>C++</span>
+      <span>C</span>
+      <span>Python</span>
+      <span>Figma</span>
+      <span>Framer</span>
+      <span>Canva</span>
+      <span>DBMS</span>
+      <span>SQL</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="projects-list">
+      <li><a href="https://github.com/johndoe/portfolio" target="_blank" rel="noopener">My Portfolio Website</a> - Responsive portfolio built with HTML, CSS & JS.</li>
+      <li><a href="https://github.com/johndoe/weather-app" target="_blank" rel="noopener">Weather App</a> - Real-time weather data using open APIs and React.</li>
+      <li><a href="https://github.com/johndoe/chat-app" target="_blank" rel="noopener">Chat Application</a> - Real-time chat with Node.js and Socket.io.</li>
+    </ul>
+  </section>
+
+  <section id="links">
+    <h2>Find Me Online</h2>
+    <div class="links" aria-label="Social media links">
+      <a href="https://github.com/yashraajsharma" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+        <svg fill="currentColor" height="28" width="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.4.5 0 6 0 12.7c0 5.4 3.4 9.9 8.1 11.5.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.3-1.6-1.3-1.6-1-.7 0-.7 0-.7 1.1.1 1.6 1.1 1.6 1.1 1 1.7 2.7 1.2 3.4.9.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6.3 0-1.4.5-2.5 1.1-3.4-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.7 11.7 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.2 3 .1 3.3.7.9 1.1 2 1.1 3.4 0 4.9-2.9 6-5.6 6.3.4.4.7 1 .7 2v3c0 .3.2.7.8.6A12.2 12.2 0 0 0 24 12.7C24 6 18.6.5 12 .5z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/yash-raj-sharma-54526a279/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+        <svg fill="currentColor" height="28" width="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 7h5v17H0V7zm7.5 0h4.67v2.33h.07c.65-1.23 2.24-2.53 4.63-2.53 4.95 0 5.87 3.26 5.87 7.5v8.67h-5v-7.67c0-1.83-.03-4.18-2.55-4.18-2.56 0-2.95 2-2.95 4.04v7.81h-5V7z"/></svg>
+      </a>
+      <a href="mailto:yrajsharma385@gmail.com" title="Email" aria-label="Email" style="font-size: 1.8rem; color:#00d8ff; display:flex; align-items:center; gap:0.3rem; text-decoration:none;">
+        &#9993; Email
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formStatus" style="margin-top:1rem;"></p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Yash Raj Sharma. All rights reserved.
+</footer>
+
+
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("OTUMgbtOJVx-Y3hrD"); 
+  })();
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target) {
+        target.scrollIntoView({behavior: 'smooth'});
+      }
+    });
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const status = document.getElementById('formStatus');
+    status.style.color = '#00d8ff';
+    status.textContent = 'Sending message...';
+    const serviceID = 'service_8rtoxdo';
+    const templateID = 'template_65g0snv'; 
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        status.style.color = '#00ff99';
+        status.textContent = 'Thank you for reaching out! I will get back to you soon.';
+        this.reset();
+      }, (err) => {
+        status.style.color = '#ff5555';
+        status.textContent = 'Oops! Something went wrong. Please try again later.';
+        console.error('EmailJS error:', err);
+      });
+  });
+</script>
+
+</body>
+</html>
+
